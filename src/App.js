@@ -35,6 +35,8 @@ const App = () => {
                 </Layout>
                 <div className="footer">
                     <Typography.Title level={5} style={{ color: 'white', textAlign: 'center' }}>
+                        Cryptocurrency data provided by <a href="https://coinranking.com/">Coinranking</a><br />
+                        News data provided by <a href="https://www.bing.com/news">Bing News</a><br /><br />
                         Cryptoverse <br />
                         All rights reserved
                     </Typography.Title>

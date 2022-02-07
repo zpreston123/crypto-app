@@ -15,7 +15,7 @@ const Exchanges = () => {
 
   if (isFetching) return <Loader />;
 
-  return (
+  return exchangesList ? (
     <>
       <Row>
         <Col span={6}>Exchanges</Col>
@@ -49,6 +49,10 @@ const Exchanges = () => {
           </Col>
         ))}
       </Row>
+    </>
+  ) : (
+    <>
+      <p>Exchanges data no longer available due to Coinranking API upgrade.</p>
     </>
   );
 };
